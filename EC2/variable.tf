@@ -21,25 +21,25 @@ variable "Owner" {
 
 ##### Resource Tags
 variable "instance_type" {
-    default = ""
+    default = "t2.micro"
     description = "EC2 instance type to use"
 }
 variable "ami-id" {
-    default = ""
+    default = "ami-07d9160fa81ccffb5"
 }
 
 
 variable "key_name" {
-    default = ""
+    default = "123"
 }
 
 variable "security_group_ids" {
-    default = [""]
+    default = ["sg-00c10e5169cd09e51"]
 }
 
 
 variable "subnet_id" {
-  default = ""
+  default = "subnet-024ff0e71d8ae3aa8"
   }
   
   variable "sdcheck" {
