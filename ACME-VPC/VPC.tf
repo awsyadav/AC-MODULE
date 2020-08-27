@@ -454,3 +454,8 @@ variable "db_subnet_cidr" {
 variable "vpcrange" {
     default = "000"
 }
+
+
+output "vpc_id" {
+  value = "${aws_vpc.main_vpc.id}"
+}
